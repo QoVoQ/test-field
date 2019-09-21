@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test preload</title>
+    <!-- if use preload, block.js will be loaded without blocking rendering, but with high download priority -->
+    <!-- <link rel="preload" as="script" href="/block.js" /> -->
+    <!-- without preload, loading of block.js will block rendering until it get downloaded -->
+    <script src="/block.js"></script>
+    <style>
+      .box {
+        height: 500px;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
