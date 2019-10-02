@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = {
   entry: {
     static: './src/index.js',
-    main: './src/main.js'
+    // main: './src/main.js'
   },
   output: {
     filename: '[name].[contentHash].bundle.js',
@@ -18,8 +18,8 @@ module.exports = {
     new CleanWebpackPlugin()
   ],
   optimization: {
-    minimize: false,
-    usedExports: true,
+    // minimize: false,
+    // usedExports: true,
     runtimeChunk: 'single',
     splitChunks: {
       cacheGroups: {
